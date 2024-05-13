@@ -1,0 +1,10 @@
+body,
+html {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    background-image: url("Fondos/FondoTETA.gif");
+}

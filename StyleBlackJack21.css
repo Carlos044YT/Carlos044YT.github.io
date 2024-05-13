@@ -1,0 +1,61 @@
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    background-image: url("Fondos/Fondo13.jpeg");
+}
+
+
+
+#dealer-cards img {
+    height: 175px;
+    width: 125px;
+    margin: 1px;
+}
+
+#your-cards img {
+    height: 175px;
+    width: 125px;
+    margin: 1px;
+}
+
+#Apostar {
+    background-color: black;
+    color: whitesmoke;
+    height: 50px;
+    width: 100px;
+    font-size: 20px;
+}
+
+#Doblar {
+    background-color: black;
+    color: whitesmoke;
+    height: 50px;
+    width: 100px;
+    font-size: 20px;
+}
+
+#Plantarse {
+    background-color: black;
+    color: whitesmoke;
+    height: 50px;
+    width: 100px;
+    font-size: 20px;
+}
+
+#restart{
+    background-color: black;
+    color: whitesmoke;
+    height: 50px;
+    width: 100px;
+    font-size: 20px;
+}
+
+h2 {
+    color: white;
+}
+#Ganadas, #Perdidas, #resultados{
+    color: white;
+    background-color: gray;
+    width: 200px;
+}

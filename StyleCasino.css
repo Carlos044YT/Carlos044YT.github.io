@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Jacquard+12+Charted&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jacquard+12+Charted&family=Rubik+Glitch+Pop&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jacquard+12+Charted&family=Press+Start+2P&family=Rubik+Glitch+Pop&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jacquard+12+Charted&family=Press+Start+2P&family=Rubik+Glitch+Pop&family=Sixtyfour&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jacquard+12+Charted&family=Press+Start+2P&family=Protest+Revolution&family=Rubik+Glitch+Pop&family=Sixtyfour&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jacquard+12+Charted&family=Press+Start+2P&family=Protest+Revolution&family=Rubik+Glitch+Pop&family=Rubik+Moonrocks&family=Sixtyfour&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jacquard+12+Charted&family=Libre+Barcode+39+Extended+Text&family=Press+Start+2P&family=Protest+Revolution&family=Rubik+Glitch+Pop&family=Rubik+Moonrocks&family=Sixtyfour&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dokdo&family=Jacquard+12+Charted&family=Libre+Barcode+39+Extended+Text&family=Press+Start+2P&family=Protest+Revolution&family=Rubik+Glitch+Pop&family=Rubik+Moonrocks&family=Sixtyfour&display=swap');
+
+body {
+    margin: 0;
+    background-image: url("Fondos/Fondo1.jpeg");
+    transition: background-image 3s ease;
+}
+
+.main {
+    color: white;
+    background-color: black;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+table {
+    width: 75%;
+    height: 100%;
+    margin: 0;
+    justify-content: center;
+    align-items: center;
+}
+
+button {
+    /* Top Right Bottom Left*/
+    color: #BA3631;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    background-color: black;
+    border: none;
+}
+
+button {
+    width: 10em;
+    position: relative;
+    height: 3.5em;
+    border: 3px ridge #BA3631;
+    outline: none;
+    background-color: transparent;
+    color: white;
+    transition: 1s;
+    border-radius: 0.3em;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+button::after {
+    content: "";
+    position: absolute;
+    top: -10px;
+    left: 3%;
+    width: 95%;
+    height: 40%;
+    background-color: transparent;
+    transition: 0.5s;
+    transform-origin: center;
+}
+
+button::before {
+    content: "";
+    transform-origin: center;
+    position: absolute;
+    top: 80%;
+    left: 3%;
+    width: 95%;
+    height: 40%;
+    background-color: transparent;
+    transition: 0.5s;
+}
+
+button:hover::before,
+button:hover::after {
+    transform: scale(0)
+}
+
+button:hover {
+    box-shadow: inset 0px 0px 25px #BA3631;
+}
+
+#btn1,
+#btn2,
+#btn3 {
+    box-shadow: none;
+    width: 244.51px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 0;
+    color: black;
+}
+
+#MainText {
+    font-family: "Rubik Moonrocks", sans-serif;
+    color: white;
+    padding: 15%;
+    text-align: center;
+    font-size: x-large;
+}
+
+#SecondText {
+    color: #BA3631;
+    font-family: "Rubik Glitch Pop", system-ui;
+    text-align: center;
+    background-color: transparent;
+}
+
+#secretText1 {
+    font-family: "Rubik Glitch Pop", system-ui;
+}
+
+#secretText2 {
+    font-family: "Rubik Glitch Pop", system-ui;
+}
+
+#secretText3 {
+    font-family: "Sixtyfour", sans-serif;
+}
+
+#secretText4 {
+    font-family: "Protest Revolution", sans-serif;
+}
+
+#secretText5 {
+    font-family: "Libre Barcode 39 Extended Text", system-ui;
+}
+
+#secretText6 {
+    font-family: "Dokdo", system-ui;
+}
+
+#secretText7 {
+    font-family: "Jacquard 12 Charted", system-ui;
+}
+
+/* @media(min-width:510px) {
+    * {
+        background-image: url("");
+    }
+} */

@@ -1,0 +1,80 @@
+body {
+    background-color: black;
+    margin: 0;
+    padding: 1% 1% 1% 1%;
+    color: white;
+}
+
+#Container {
+    align-items: 100vh;
+}
+
+#VideoInfo {
+    width: 100%;
+}
+
+#return-to-lobby {
+    box-shadow: 10cm;
+    color: white;
+    align-items: 0vh;
+    padding: 1% 3% 1% 3%;
+    margin: 0%;
+}
+
+button {
+    width: 165px;
+    height: 62px;
+    cursor: pointer;
+    color: #fff;
+    font-size: 17px;
+    border-radius: 1rem;
+    border: none;
+    position: relative;
+    background: #100720;
+    transition: 0.1s;
+}
+
+button::after {
+    content: '';
+    width: 100%;
+    height: 100%;
+    background-image: radial-gradient(circle farthest-corner at 10% 20%, rgba(250, 0, 0, 1) 17.8%, rgba(83, 83, 236, 1) 100.2%);
+    filter: blur(15px);
+    z-index: -1;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+button:active {
+    transform: scale(0.9) rotate(3deg);
+    background: radial-gradient(circle farthest-corner at 10% 20%, rgba(250, 0, 0, 1) 17.8%, rgba(83, 83, 236, 1) 100.2%);
+    transition: 0.5s;
+}
+
+#SecondCont {
+    height: 100vh;
+    width: 70%;
+    border: 1px solid white;
+}
+
+#ThirdCont {
+    display: flex;
+}
+
+p {
+    background-color: #100720;
+}
+
+img {
+    height: 130px;
+    width: 115px;
+}
+
+#foto1,
+#foto2 {
+    width: 50%;
+}
+
+/* A partir de ésta línea estará sujeta a cambios para probar metodología nueva */
+
