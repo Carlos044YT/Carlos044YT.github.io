@@ -1,0 +1,115 @@
+body{
+    text-align: center;
+    padding: 0;
+    margin: 0;
+    background-color: rgb(255, 241, 144);
+}
+
+:root{
+    --outer-shadow:
+    0 0 0.1vw 0.4vw #fffb00,
+    0 0 0.4vw 0.6vw #000000,
+    0 0 1vw 0.4vw #001214,
+}
+
+.Tragamonedas{
+    width: 80%;
+    height: 400px;
+    overflow: hidden;
+    margin: auto;
+    margin-top: 40px;
+    background-color: aliceblue;
+    border-radius:8px;
+    box-shadow: var(--outer-shadow);
+}
+
+#Tragamonedas-pantalla{
+    height: 500px;
+    position: relative;
+    overflow: hidden;
+}
+
+ul{
+    list-style: none;
+}
+
+ul li{
+    border: 2px solid black;
+    border-radius: 5px;
+    width: 98%;
+    margin: 1px 0;
+    background-color: #ffd400;
+}
+
+.Carriles{
+    width: 31%;
+    position: absolute;
+    padding: 0px;
+}
+
+.Carriles:nth-child(1){
+    left: 0;
+}
+
+.Carriles:nth-child(2){
+    left: 34.5%;
+}
+
+.Carriles:nth-child(3){
+    right: 0;
+}
+
+.Carril img{
+    display: block;
+    margin: auto;
+    height: 240px;
+    max-width: 100%;
+}
+
+.Parar{
+    display: inline-block;
+    padding: 35px;
+    margin: 40px;
+    background-color: rgb(237, 23, 23);
+    box-shadow: 0 0 29 31 #fff,
+    0 0 19px #f00,
+    0 0 33px #f00;
+    border-bottom: solid 4ppx #627295;
+    border-radius: 60px;
+}
+
+.Parar:hover{
+    background-color: rgb(21, 199, 15);
+    cursor: pointer;
+    box-shadow: 0 0 29px 31px #fff,
+    0 0 19px 19px rgb(21, 255, 0),
+    0 0 33px 17px rgb(0, 255, 42);
+}  
+
+.Parar:active{
+    -webkit-transform: translateY(4px);
+    transform: translateY(4px);
+    border-bottom:none;
+}
+
+#Empezar{
+    display: inline-block;
+    padding: 20 px 40px;
+    background-color: #13aa52;
+    border: 5px solid #02893a;
+    font-size: 30px;
+    margin-bottom: 40px;
+    font-weight: bold;
+}
+
+#Empezar:hover{
+    background-color: #06a347;
+    cursor: pointer;
+}
+
+#Empezar:active{
+    -webkit-transform: translateY(6px);
+    transform: translateY(6px);
+    border: none;
+}
+
