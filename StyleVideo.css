@@ -1,9 +1,32 @@
 body,
 html {
     height: 100%;
+    width: 100%;
     margin: 0;
     display: flex;
     justify-content: center;
     align-items: center;
     background-color: black;
+}
+
+@keyframes changeImage{
+    0%{
+        background-image: url("Fondos/Fondo9.jpeg");
+    }
+    25%{
+        background-image: url("Fondos/Fondo10.jpeg");
+    }
+    50%{
+        background-image: url("Fondos/Fondo13.jpeg");
+    }
+    75%{
+        background-image: url("Fondos/Fondo23.jpeg");
+    }
+    100%{
+        background-image: url("Fondos/Fondo25.jpeg");
+    }
+}
+
+body{
+    animation: changeImage 30s linear infinite;
 }

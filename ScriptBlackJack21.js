@@ -113,7 +113,9 @@ function Doblar() {
     dobleApostar = false;
 
     document.getElementById("escondida").src = "cardset-trumps/" + esconder + ".jpeg";
-
+    if (tuSum > 21) { //Esta condición se ejecuta cuando tu tienes más de 21
+        Scream();
+    }
     let message = "";
     if (tuSum > 21) { //Esta condición se ejecuta cuando tu tienes más de 21
         message = "Perdiste...";
@@ -160,7 +162,9 @@ function Plantarse() {
 
 
     document.getElementById("escondida").src = "cardset-trumps/" + esconder + ".jpeg";
-
+    if (tuSum > 21) { //Esta condición se ejecuta cuando tu tienes más de 21
+        Scream();
+    }
     let message = "";
     if (tuSum > 21) { //Esta condición se ejecuta cuando tu tienes más de 21
         message = "Perdiste...";
@@ -209,4 +213,17 @@ function reducirAce(JugadorSum, JugadorAceCont) {
 
 function reiniciar(){
     location.reload();
+}
+
+function Scream(){
+    var jumpscare = document.getElementById("Viscream");
+    jumpscare.style.visibility = "visible";
+    var audio = document.getElementById("Auscream");
+    audio.play();
+    setTimeout(Borrar, 3500)
+}
+
+function Borrar(){
+    var jumpscare = document.getElementById("Viscream");
+    jumpscare.style.visibility = "hidden"
 }
